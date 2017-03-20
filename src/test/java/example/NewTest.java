@@ -20,9 +20,10 @@ public class NewTest {
 
 	@BeforeTest
 	public void beforeTest() {
-		//System.setProperty("webdriver.gecko.driver","geckodriver.exe");
-		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver","geckodriver.exe");
+		//System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		//driver = new ChromeDriver();
+		driver = new FirefoxDriver();
 	}
 
 	@AfterTest
