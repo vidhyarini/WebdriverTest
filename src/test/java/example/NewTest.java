@@ -28,7 +28,7 @@ public class NewTest {
 			System.out.println("Chrome browser is started");
 	}
 	else {
-			System.setProperty("webdriver.gecko.driver","C://geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver","geckodriver.exe");
 			driver = new FirefoxDriver();
 			System.out.println("Firefox browser is started");
 
