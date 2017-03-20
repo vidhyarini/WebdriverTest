@@ -20,7 +20,7 @@ public class NewTest {
 
 	@BeforeTest
 	public void beforeTest() {
-	String Browsertype = "Chrome";
+	String Browsertype = "Chrome1";
 	if (Browsertype == "Chrome" ) {
 
 			System.setProperty("webdriver.chrome.driver","chromedriver.exe");
