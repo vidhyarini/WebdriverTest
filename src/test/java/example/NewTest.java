@@ -20,10 +20,19 @@ public class NewTest {
 
 	@BeforeTest
 	public void beforeTest() {
-		System.setProperty("webdriver.gecko.driver","geckodriver.exe");
-		//System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-		//driver = new ChromeDriver();
-		driver = new FirefoxDriver();
+	String Browsertype = "";
+	if (Browsertype == "Chrome" ) {
+
+			System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+			driver = new ChromeDriver();
+			System.out.println("Chrome browser is started");
+	}
+	else {
+			System.setProperty("webdriver.gecko.driver","C://geckodriver.exe");
+			driver = new FirefoxDriver();
+			System.out.println("Firefox browser is started");
+
+		}
 	}
 
 	@AfterTest
