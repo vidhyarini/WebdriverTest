@@ -20,7 +20,7 @@ public class NewTest {
 
 	@BeforeTest
 	public void beforeTest() {
-	String Browsertype = "";
+	String Browsertype = "Chrome1";
 	if (Browsertype == "Chrome" ) {
 
 			System.setProperty("webdriver.chrome.driver","chromedriver.exe");
@@ -28,10 +28,9 @@ public class NewTest {
 			System.out.println("Chrome browser is started");
 	}
 	else {
-			System.setProperty("webdriver.gecko1.driver","geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver","C://geckodriver.exe");
 			driver = new FirefoxDriver();
 			System.out.println("Firefox browser is started");
-
 		}
 	}
 
