@@ -49,7 +49,7 @@ public class NewTest {
 	
 	@BeforeTest
 	public void beforeTest() throws InterruptedException {
-	String Browsertype = "Chrome";
+	String Browsertype = "Firefox";
 	if (Browsertype == "Chrome" ) {
 
 			System.setProperty("webdriver.chrome.driver","chromedriver.exe");
