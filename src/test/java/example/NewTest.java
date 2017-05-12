@@ -33,7 +33,20 @@ public class NewTest {
 		String strPageTitle1 = driver.getTitle();
 		System.out.println("Login is successful: " + strPageTitle1);
 	}
+	
+	@Test
+	public void Test1() throws InterruptedException{
+		/*WebElement element = driver.findElement(By.xpath("//input[(@name='userName')]"));
+		element.sendKeys("mercury");
+		 driver.findElement(By.name("password")).sendKeys("mercury");
 
+		// Click on login button
+		driver.findElement(By.name("login")).click();*/
+		Thread.sleep(5000);
+		String strPageTitle1 = driver.getTitle();
+		System.out.println("Login is successful: " + strPageTitle1);
+	}
+	
 	@BeforeTest
 	public void beforeTest() throws InterruptedException {
 	String Browsertype = "Chrome1";
@@ -47,7 +60,6 @@ public class NewTest {
 			System.setProperty("webdriver.gecko.driver","C://geckodriver.exe");
 			driver = new FirefoxDriver();
 			System.out.println("Firefox browser is started");
-			
 		}
 	}
 
