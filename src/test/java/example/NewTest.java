@@ -59,6 +59,7 @@ public class NewTest {
 	else {
 			System.setProperty("webdriver.gecko.driver","C://geckodriver.exe");
 			driver = new FirefoxDriver();
+			driver.manage().window().maximize();
 			System.out.println("Firefox browser is started");
 		}
 	}
