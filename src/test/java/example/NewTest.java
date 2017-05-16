@@ -49,7 +49,7 @@ public class NewTest {
 	
 	@BeforeTest
 	public void beforeTest() throws InterruptedException {
-	String Browsertype = "Firefox";
+	/*String Browsertype = "Firefox";
 	if (Browsertype == "Chrome" ) {
 
 			System.setProperty("webdriver.chrome.driver","chromedriver.exe");
@@ -62,7 +62,7 @@ public class NewTest {
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			System.out.println("Firefox browser is started");
-		}
+		}*/
 	}
 
 	@AfterTest
